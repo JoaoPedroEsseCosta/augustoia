@@ -1,6 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type";
-
-const InputGroup = ({type, placeholder, name, onChange, label }) =>{
+const InputGroup = ({type, placeholder, name, onChange, label, min}) =>{
     return (
         <div className="input-group mb-3">
             <span className="input-group-text">{label}</span>
@@ -10,6 +8,7 @@ const InputGroup = ({type, placeholder, name, onChange, label }) =>{
                 placeholder={placeholder}
                 name={name}
                 onChange={onChange}
+                min={min}
             />
         </div>
     );

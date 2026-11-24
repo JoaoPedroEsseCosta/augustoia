@@ -13,3 +13,8 @@ const Produto = db.define('Produto',{
 });
 
 module.exports = Produto;
+
+imagem: {
+    type: DataTypes.STRING,
+    allowNull; true
+}
